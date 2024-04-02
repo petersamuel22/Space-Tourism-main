@@ -1,0 +1,135 @@
+@media (max-width: 768px) {
+
+    body {
+        background-image: url(assets/crew/background-crew-desktop.jpg);
+        background-size: cover;
+        color: white;
+        padding: 0vh 5vw;
+
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        margin-top: 7vh;
+        height: auto;
+        align-items: center;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+    }
+
+    .crew-img-mobile {
+        width: 48vw;
+        height: 30vh;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.474);
+    }
+
+    .crew-img-desktop {
+        display: none;
+    }
+
+    .crew-list-desktop {
+        display: none;
+    }
+
+    .crew-list-mobile {
+        display: flex;
+        flex-direction: row;
+        gap: 7vw;
+    }
+
+    .crew-list-mobile a {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: solid rgba(255, 255, 255, 0.467) 1px;
+    }
+
+    .crew-list-mobile li a {
+        color: #ffffff00;
+    }
+
+    .active-section {
+        color: white;
+        background-color: white;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        background-image: url(assets/crew/background-crew-desktop.jpg);
+        background-size: cover;
+        color: white;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        gap: 20vw;
+        height: 100vh;
+    }
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    .page-title {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+
+    .crew-img-mobile {
+        display: none;
+    }
+
+    .crew-img-desktop {
+        position: absolute;
+        width: 22rem;
+        height: 30rem;
+        bottom: 0vh;
+    }
+
+    .crew-list-mobile {
+        display: none;
+    }
+
+    .crew-list-desktop {
+        margin-top: 10vh;
+        display: flex;
+        gap: 2vw;
+    }
+
+    .crew-list-desktop a {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: solid rgba(255, 255, 255, 0.467) 1px;
+    }
+
+    .crew-list-desktop li a {
+        color: #ffffff00;
+    }
+
+    .active-section {
+        color: white;
+        background-color: white;
+    }
+
+}

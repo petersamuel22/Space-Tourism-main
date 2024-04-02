@@ -1,0 +1,131 @@
+@media (max-width: 768px) {
+
+    body {
+        background-image: url(assets/technology/background-technology-mobile.jpg);
+        background-size: cover;
+        color: white;
+    }
+
+    .logo-mobile {
+        margin-top: 2.5vh;
+        margin-left: 5vw;
+        display: inline;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vh;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .page-title {
+        margin-bottom: 3vh;
+    }
+
+    .desktop-photo {
+        display: none;
+    }
+
+    .mobile-photo {
+        padding: 0vh 0vw;
+    }
+
+    .technology-list {
+        margin-top: 5vh;
+        display: flex;
+        gap: 3vw;
+    }
+
+    .technology-list a {
+        border: solid 2px rgba(255, 255, 255, 0.6);
+        border-radius: 1000px;
+        padding: 0.5rem 1rem;
+    }
+
+    .active-section {
+        color: black;
+        background-color: white;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        padding: 0vh 5vw;
+    }
+
+}
+
+@media (min-width: 769px) {
+    body {
+        background-image: url(assets/technology/background-technology-desktop.jpg);
+        background-size: cover;
+        color: white;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        height: 100vh;
+    }
+
+    .page-title {
+        margin-bottom: 5vh;
+    }
+
+    .technology-list {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    .technology-list li {
+        display: inline-flex;
+    }
+
+    .technology-list a {
+        display: inline-flex;
+        border: solid 2px rgba(255, 255, 255, 0.6);
+        border-radius: 1000px;
+        padding: 0.85rem 1.4rem;
+    }
+
+    .active-section {
+        color: black;
+        background-color: white;
+    }
+
+    .info {
+        margin-left: 5rem;
+    }
+
+
+    .container {
+        display: flex;
+        margin-top: 10vh;
+    }
+
+    .mobile-photo {
+        display: none;
+    }
+
+    .desktop-photo {
+        position: absolute;
+        width: 22rem;
+        height: 24rem;
+        right: 0vw;
+        top: 30vh;
+    }
+}

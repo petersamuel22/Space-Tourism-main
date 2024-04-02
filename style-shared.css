@@ -1,0 +1,138 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+a {
+    color: #eceefb;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 8.5em;
+}
+
+p {
+    color: #D0D6F9;
+}
+
+h2 {
+    color: #e7eaf8;
+}
+
+span {
+    color: #ffffff;
+    font-weight: 900;
+}
+
+:root {
+    --line-clr: rgba(255, 255, 255, 0.204);
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+    }
+
+    .logo-mobile {
+        margin-top: 2.5vh;
+        display: inline;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+
+    .bars {
+        position: fixed;
+        right: 6vw;
+        top: 4.25vh;
+    }
+
+    .xmark {
+        padding: 4.25vh 6vw;
+        text-align: right;
+    }
+
+    nav ul {
+        display: none;
+        gap: 6vh;
+        background-color: rgba(221, 221, 221, 0.071);
+        backdrop-filter: blur(15px);
+        position: fixed;
+        top: 0vh;
+        width: 70vw;
+        height: 100vh;
+        right: 0vw;
+        transition: 0.2s;
+        z-index: 2;
+    }
+
+    nav ul li {
+        padding: 0vh 10vw;
+    }
+}
+
+@media (min-width: 769px) {
+
+    body {
+        padding: 0vh 12vw;
+    }
+
+    .bars,
+    .xmark {
+        display: none;
+    }
+
+    .header {
+        position: fixed;
+        top: 10vh;
+    }
+
+    nav {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-desktop {
+        position: fixed;
+        left: 4vw;
+    }
+
+    .horizontal-line {
+        border: solid 1px var(--line-clr);
+        width: 37vw;
+        left: 12vw;
+        position: fixed;
+        z-index: 1;
+    }
+
+    nav ul {
+        position: fixed;
+        display: flex;
+        gap: 4vw;
+        background-color: rgba(221, 221, 221, 0.071);
+        backdrop-filter: blur(20px);
+        right: 0vw;
+        padding: 0vh 10vw 0vh 5vw;
+    }
+
+    nav ul li {
+        padding: 1.5rem 0rem;
+    }
+
+    .active-tap {
+        border-bottom: solid 3px white;
+        padding-bottom: 1.6rem;
+    }
+
+    .page-title span {
+        color: rgba(255, 255, 255, 0.473);
+        font-weight: 900;
+    }
+
+}
